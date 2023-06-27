@@ -16,3 +16,12 @@ val prefs = FastPrefs(this)
 prefs.setString("key","value")
 val value = prefs.getString("key","defaultValue")
 ```
+4. Set and get object.
+```
+val prefs = FastPrefs(this)
+prefs.set("key",yourObject)
+
+val yourObject : YourClass? = prefs.get("key",null)
+
+
+```
